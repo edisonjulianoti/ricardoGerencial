@@ -1,0 +1,60 @@
+<!--[main]-->
+
+
+<div class="container">
+  <div class="py-5 text-center">
+    
+    <h2>OUVIDORIA</h2>
+    
+  </div>
+
+  <div class="row">
+    
+    <div class="col-md-12 order-md-1">
+      
+      <form id='form_ouvidoria' name='form_ouvidoria'>
+          
+        <div class="mb-3">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" name="nome" id="nome" placeholder="Informe o seu nome">
+        </div>
+        
+        <div class="mb-3">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" name="email" id="email">
+        </div>
+        
+        <div class="mb-3">
+          <label for="telefone">Telefone</label>
+          <input type="text" class="form-control" name="telefone" id="telefone">
+        </div>
+        
+        <hr class="mb-4">
+        
+        <div class="mb-3">
+          <label for="nome">Tipo</label>
+          
+          {$tipo_ouvidoria_id}
+          
+        </div>
+        
+        <div class="mb-3">
+          <label for="mensagem">Mensagem</label>
+          <textarea style='height:100px' name='mensagem' class='form-control'></textarea>
+        </div>
+        
+        <hr class="mb-4">
+        <button 
+            onclick="Adianti.waitMessage = 'Carregando';__adianti_post_data('form_ouvidoria', 'class=OuvidoriaPublicaForm&method=onSave&static=1');return false;"
+            class="btn btn-primary btn-lg btn-block" >Envinar Mensagem Para Ouvidoria</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">© 2023 Edison Julianoti</p>
+  </footer>
+</div>
+
+
+<!--[/main]-->

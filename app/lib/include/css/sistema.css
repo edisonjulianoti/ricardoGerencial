@@ -1,0 +1,9 @@
+div[page-name="LoginClienteForm"] .card{
+    width: 500px !important;
+    margin: auto;
+    margin-top: 200px;
+}
+
+div[page-name="LoginClienteForm"] .tfield{
+    padding-left: 30px !important;
+}

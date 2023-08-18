@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+  <menuitem label="Configurações">
+    <icon>fas:cogs fa-fw </icon>
+    <menu>
+      <menuitem label="Gerar Dados">
+        <icon>fas:database fa-fw </icon>
+        <action>GenerateDataControl#method=onShow</action>
+      </menuitem>
+      <menuitem label="Email templates">
+        <icon>fas:chevron-right fa-fw </icon>
+        <action>EmailTemplateHeaderList#method=onShow</action>
+      </menuitem>
+      <menuitem label="Erros de crontab">
+        <icon>far:circle fa-fw </icon>
+        <action>ErrorLogCrontabHeaderList#method=onShow</action>
+      </menuitem>
+    </menu>
+  </menuitem>
+</menu>
